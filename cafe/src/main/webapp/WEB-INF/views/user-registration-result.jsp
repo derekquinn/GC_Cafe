@@ -9,10 +9,13 @@
 </head>
 <body>
 
-sup ${ user.firstName } 
-your last Name is ${ user.lastName }
-SSN is ${ user.socialSecurity } 
-Shoes be ${ user.shoeSize }
+${ user.firstName } 
+<br>
+${ user.lastName }
+<br>
+${ user.socialSecurity } 
+<br>
+${ user.shoeSize }
 
 
 

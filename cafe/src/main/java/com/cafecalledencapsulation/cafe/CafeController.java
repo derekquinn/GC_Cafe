@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-
 @Controller
 public class CafeController {
 
@@ -24,7 +23,6 @@ public class CafeController {
 	public ModelAndView showUserRegistration() {
 		return new ModelAndView("/user-registration");
 	}
-	
 
 	@RequestMapping("/user-registration-result")
 	public ModelAndView submitUserReg(User aUser) {
@@ -32,4 +30,14 @@ public class CafeController {
 		return new ModelAndView("/user-registration-result");
 
 	}
+
+// post map to hide ssn and max data 
+	
+	@PostMapping("/user-registration-result") 
+	
+	public ModelAndView submitUserRegSecure(User aUser) {
+		
+		return new ModelAndView("redirect:/user-registration-result");
+	}
+
 }
