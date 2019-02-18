@@ -9,7 +9,7 @@
 </head>
 <body>
 
-sup ${ firstname }
+sup ${ user.firstName }
 
 </body>
 </html>

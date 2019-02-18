@@ -18,9 +18,9 @@
 	<form action="/user-registration-result">
 	<table>
 	<br>
-	<tr><td><label>First Name </label></td> <td><input type="text" id="firstname" name="firstname" pattern="[A-Z][a-z]*" /></td> <td><label>Last Name</label></td><td><input  type="text" id="lastname" name="lastname" pattern="[A-Z][a-z]*"/></td></tr>
+	<tr><td><label>First Name </label></td> <td><input type="text" id="firstName" name="firstName" pattern="[A-Z][a-z]*" /></td> <td><label>Last Name</label></td><td><input  type="text" id="lastName" name="lastName" pattern="[A-Z][a-z]*"/></td></tr>
 	
-	<tr><td><label>Social Security Number: </label></td> <td><input type="number" id="ssn" name="ssn" /></td> <td><label>Shoe Size (EU)</label></td><td><input  type="number" id="lastname" name="lastname"/></td></tr>
+	<tr><td><label>Social Security Number: </label></td> <td><input type="number" id="socialSecurity" name="socialSecurity" /></td> <td><label>Shoe Size (EU)</label></td><td><input  type="number" id="shoeSize" name="shoeSize"/></td></tr>
 	
 	</table>
 	<button>Submit Application</button>
