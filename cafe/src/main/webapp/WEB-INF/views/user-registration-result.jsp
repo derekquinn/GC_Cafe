@@ -9,7 +9,12 @@
 </head>
 <body>
 
-sup ${ user.firstName }
+sup ${ user.firstName } 
+your last Name is ${ user.lastName }
+SSN is ${ user.socialSecurity } 
+Shoes be ${ user.shoeSize }
+
+
 
 </body>
 </html>
