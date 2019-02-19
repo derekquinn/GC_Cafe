@@ -24,23 +24,23 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="/images/coffee_shop_s.jpg" class="d-block w-100" alt="Get Encapsulated">
-        <div class="carousel-caption d-md-block">
-          <h5> getEncapsulated()</h5>
-          <p>Every Java Bean includes complimentary Getters, Setters and Constructors.</p>
+        <div class="carousel-caption d-md-block">          <a href="/user-registration"><h5>Now Accepting Member Applications</h5> 
+          <p>Apply today and join our member Connoisseurs from around the world.</p></a>
+          
         </div>
       </div>
       <div class="carousel-item">
         <img src="/images/coffee_shop3_s.jpg" class="d-block w-100" alt="POJO">
         <div class="carousel-caption d-md-block">
-          <h5>Our Mission</h5>
-          <p>We strive to make every POJO worth it's weight in bytes!</p>
+        <h5> getEncapsulated()</h5>
+          <p>Every Java Bean includes complimentary Getters, Setters and Constructors.</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="/images/coffee_shop2_s.jpg" class="d-block w-100" alt="Register Now">
         <div class="carousel-caption d-md-block">
-         <a href="/user-registration"> <h5>Now Accepting Member Applications</h5> </a>
-          <p>Apply today and join our member Connoisseurs from around the world.</p>
+         <a href="/user-registration"> <h5>Now Accepting Member Applications</h5>
+          <p>Apply today and join our member Connoisseurs from around the world.</p> </a>
         </div>
       </div>
     </div>
@@ -55,7 +55,7 @@
   </div>
 </div>
 <center>
-Click <a href="/user-registration"> HERE </a> to be encapsulated! </center>
+
 
 <!-- BOOTSTRAP -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -64,4 +64,7 @@ Click <a href="/user-registration"> HERE </a> to be encapsulated! </center>
 
 
 </body>
+<footer>
+Click <a href="/user-registration"> HERE </a> to be encapsulated! </center>
+</footer>
 </html>

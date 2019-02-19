@@ -36,16 +36,17 @@
 				<tr>
 					<td><label>First Name </label></td>
 					<td><input type="text" id="firstName" name="firstName"
-						pattern="[A-Z][a-z]*" /></td>
+						placeholder="Steve" pattern="[A-Z][a-z]*" /></td>
 					<td><label>Last Name</label></td>
 					<td><input type="text" id="lastName" name="lastName"
-						pattern="[A-Z][a-z]*" /></td>
+						placeholder="Jobs" pattern="[A-Z][a-z]*" /></td>
 
 				</tr>
 
 				<tr>
 					<td><label>E-Mail</label></td>
-					<td><input type="email" id="email" name="email"></td>
+					<td><input type="email" id="email" name="email"
+						placeholder="steve@apple.com"></td>
 					<td><label>Birthday</label></td>
 					<td><input type="date" id="birthDate" name="birthDate"></td>
 				</tr>
@@ -53,40 +54,50 @@
 				<tr>
 					<td><label>Social Security Number: </label></td>
 					<td><input type="password" maxlength="9" id="socialSecurity"
-						name="socialSecurity" /></td>
+						name="socialSecurity" placeholder="No Hyphens" /></td>
 					<td><label>Shoe Size (EU)</label></td>
 					<td><input type="number" max="52" id="shoeSize"
-						name="shoeSize" /></td>
+						name="shoeSize" placeholder="EU Shoe Size" /></td>
 				</tr>
 			</table>
 			<br>
 			<H3>Coffee Preferences</H3>
 			<fieldset>
-			
-			<p> Roast Preference</p>
-			
+
+				<p>Roast Preference</p>
+
 				<div class="btn-group btn-group-toggle" data-toggle="buttons">
 					<label class="btn btn-secondary active"> <input
-						type="radio" name="roast" id="light" value="Light" autocomplete="off" checked>
-						Light
+						type="radio" name="roast" id="light" value="Light"
+						autocomplete="off" checked> Light
 					</label> <label class="btn btn-secondary"> <input type="radio"
-						name="roast" id="medium" value="Medium" autocomplete="off"> Medium
+						name="roast" id="medium" value="Medium" autocomplete="off">
+						Medium
 					</label> <label class="btn btn-secondary"> <input type="radio"
-						name="roast" id="dark" value="Dark" autocomplete="off"> Dark
+						name="roast" id="dark" value="Dark" autocomplete="off">
+						Dark
 					</label>
 				</div>
-			
-			
-				<p>
-					Extraction Preference: <input type="radio" name="extraction"
-						value="Espresso"> Espresso <input type="radio"
-						name="extraction" value="Drip"> Drip <input type="radio"
-						name="extraction" value="French Press"> French Press
-				</p>
+				<br> <br>
 
+				<p>Extraction Preference:</p>
 			
+				<div >
+					<select name="extraction">
+						<option value="Espresso">Espresso</option>
+						<option value="Drip">Drip Machine</option>
+						<option value="French Press">French Press</option>
+						<option value="Pour Over">Pour Over</option>
+					</select>
+				</div>
+
+
+
+
+
+
 			</fieldset>
-
+			<br>
 
 			<button class="btn btn-dark">Submit To Encapsulation</button>
 	</form>
