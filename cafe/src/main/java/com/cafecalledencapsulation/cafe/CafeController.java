@@ -3,7 +3,6 @@ package com.cafecalledencapsulation.cafe;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -38,7 +37,7 @@ public class CafeController {
 	
 	public ModelAndView submitUserRegSecure(User aUser) {
 		
-		return new ModelAndView("redirect:/user-registration-result");
+		return new ModelAndView("user-registration-result");
 	}
 
 }
