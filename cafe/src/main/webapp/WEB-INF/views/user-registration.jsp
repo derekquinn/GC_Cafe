@@ -12,8 +12,7 @@
 	<center>
 	<h3> <i>A CAFE CALLED ENCAPSULATION </i></h3>
 
-		<i>At A Cafe Called Encapsulation, we require enhanced
-			interrogation and a comprehensive application before you will be
+		<i>A Cafe Called Encapsulation, requires a comprehensive application and interview process before you will be
 			admitted to our facility.</i>
 	</center>
 
