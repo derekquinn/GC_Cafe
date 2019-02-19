@@ -13,7 +13,7 @@
 </head>
 <body>
 
-	<h3> <i>A CAFE CALLED ENCAPSULATION </i></h3>
+	<center><h1> <i>A CAFE CALLED ENCAPSULATION </i></h1></center>
 	
 
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -25,7 +25,7 @@
       <img class="d-block w-100" src="/images/coffee_shop2.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/images/coffee_shop.jpg" alt="Third slide">
+      <img class="d-block w-100" src="/images/coffee_shop3.jpg" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
