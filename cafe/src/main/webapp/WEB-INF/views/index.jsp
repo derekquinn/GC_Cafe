@@ -56,6 +56,14 @@
   </div>
 </div>
 <br>
+
+<div class="jumbotron">
+  <h1 class="display-4">Hello, friend!</h1>
+  <p class="lead">A Cafe Called Encapsulation is a coffee shop where construction workers GET coffee and SET it down.</p>
+  <hr class="my-4">
+  <p>You can join this elite club of computer programmers, construction workers and well regarded citizens by filling out our application below. </p>
+  <a class="btn btn-primary btn-lg" href="/user-registration" role="button">Apply Now</a>
+</div>
 <center>
 
 
@@ -68,6 +76,6 @@
 </body>
 <footer>
 <br>
-<h5>Click <span class="badge badge-secondary"><a href="/user-registration">HERE</a></span> to be encapsulated.</h5></center>
+<i>Cafe Called Encapsulation is A Proud Member of Encapsulation Nation Federation</i></center>
 </footer>
 </html>

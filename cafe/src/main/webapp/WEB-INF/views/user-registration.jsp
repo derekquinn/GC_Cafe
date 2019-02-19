@@ -140,5 +140,14 @@
 </body>
 <footer>
 
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Whoops!</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Not ready to apply yet?</h6>
+    <p class="card-text">Feel free to return to the home page if you're not ready to apply.</p>
+    <a href="/" class="card-link">Home</a>
+  </div>
+</div>
+
 </footer>
 </html>

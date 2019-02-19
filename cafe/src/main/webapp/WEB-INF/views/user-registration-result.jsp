@@ -21,7 +21,7 @@
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
 			<h1 class="display-4">Encapsulation Underway!</h1>
-			<p class="lead">Your application has been submitted. </p>
+			<p class="lead">Thanks for submitting your application, you won't regret it. </p>
 		</div>
 	</div>
 
@@ -50,8 +50,16 @@
 </table>
 
 <br>
-<i> Your application for membership is currently being reviewed. </i>
-</center>
 
+
+
+<div class="card text-center" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Submission Status</h5>
+    <p class="card-text">Your application for membership is currently being reviewed. </p>
+    <a href="/" class="btn btn-primary">Go Home</a>
+  </div>
+</div>
+</center>
 </body>
 </html>
