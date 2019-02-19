@@ -25,12 +25,17 @@
 
 <tr><td>Shoe Size:</td><td> ${ user.shoeSize }</td></tr>
 
+<tr><td>Birthday</td><td> ${ user.birthDate }</td></tr>
+
+<tr><td>E-Mail</td><td> ${ user.email }</td></tr>
+
 
 <tr><td>Preferred Roast:</td><td> ${ user.roast }</td></tr>
 
 
 <tr><td>Preferred Extraction: </td><td> ${ user.extraction }</td></tr>
 </table>
+
 <br>
 <i> Your application for membership is currently being reviewed. </i>
 </center>

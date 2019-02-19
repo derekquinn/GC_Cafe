@@ -8,8 +8,10 @@
 <title>A Cafe Called Encapsulation</title>
 </head>
 <body>
+<center>
+	<h3> <i>A CAFE CALLED ENCAPSULATION </i></h3>
 
 Click <a href="/user-registration"> HERE </a> to be encapsulated! 
-
+</center>
 </body>
 </html>

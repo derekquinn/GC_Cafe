@@ -9,6 +9,8 @@ public class User {
 	private int shoeSize;
 	private String roast;
 	private String extraction;
+	private String email;
+	private String birthDate;
 
 // no args constructor 
 	public User() {
@@ -23,10 +25,18 @@ public class User {
 		this.shoeSize = shoeSize;
 		this.roast = roast;
 		this.extraction = extraction;
+		this.email = email;
+		this.birthDate = birthDate;
 
 	}
 
 // getters for users object 
+	public String getEmail() {
+		return email;
+	}
+	public String getBirthDate() {
+		return birthDate;
+	}
 	public String getExtraction() {
 		return extraction;
 	}
@@ -50,6 +60,13 @@ public class User {
 	}
 
 // setters for users object 
+	public void setBirthDate(String birthDate) {
+		this.birthDate = birthDate;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
 	public void setExtraction(String extraction) {
 		this.extraction = extraction; 
 	}
