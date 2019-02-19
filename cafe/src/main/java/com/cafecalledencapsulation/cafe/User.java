@@ -7,6 +7,8 @@ public class User {
 	private String lastName;
 	private String socialSecurity;
 	private int shoeSize;
+	private String roast;
+	private String extraction;
 
 // no args constructor 
 	public User() {
@@ -14,15 +16,23 @@ public class User {
 	}
 
 // overloaded constructor 
-	public User(String firstname, String lastname, String socialSecurity, int shoeSize) {
+	public User(String firstname, String lastname, String socialSecurity, int shoeSize, String roast) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.socialSecurity = socialSecurity;
 		this.shoeSize = shoeSize;
+		this.roast = roast;
+		this.extraction = extraction;
 
 	}
 
 // getters for users object 
+	public String getExtraction() {
+		return extraction;
+	}
+	public String getRoast() {
+		return roast;
+	}
 	public String getFirstName() {
 		return firstName;
 	}
@@ -40,6 +50,12 @@ public class User {
 	}
 
 // setters for users object 
+	public void setExtraction(String extraction) {
+		this.extraction = extraction; 
+	}
+	public void setRoast(String roast) {
+		this.roast = roast;
+	}
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}

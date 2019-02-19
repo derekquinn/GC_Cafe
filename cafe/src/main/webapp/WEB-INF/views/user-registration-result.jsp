@@ -16,7 +16,10 @@ ${ user.lastName }
 ${ user.socialSecurity } 
 <br>
 ${ user.shoeSize }
-
+<br>
+${ user.roast }
+<br>
+${ user.extraction }
 
 
 </body>
