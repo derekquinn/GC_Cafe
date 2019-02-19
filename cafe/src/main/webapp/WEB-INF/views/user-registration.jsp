@@ -38,28 +38,28 @@
 				<tr>
 					<td><label>First Name </label></td>
 					<td><input type="text" id="firstName" name="firstName"
-						placeholder="Steve" pattern="[A-Z][a-z]*" /></td>
+						placeholder="Steve" pattern="[A-Z][a-z]*" required/></td>
 					<td><label>Last Name</label></td>
 					<td><input type="text" id="lastName" name="lastName"
-						placeholder="Jobs" pattern="[A-Z][a-z]*" /></td>
+						placeholder="Jobs" pattern="[A-Z][a-z]*" required /></td>
 
 				</tr>
 
 				<tr>
 					<td><label>E-Mail</label></td>
 					<td><input type="email" id="email" name="email"
-						placeholder="steve@apple.com"></td>
+						placeholder="steve@apple.com" required></td>
 					<td><label>Birthday</label></td>
-					<td><input type="date" id="birthDate" name="birthDate"></td>
+					<td><input type="date" id="birthDate" name="birthDate" required></td>
 				</tr>
 
 				<tr>
 					<td><label>Social Security Number: </label></td>
 					<td><input type="password" maxlength="9" id="socialSecurity"
-						name="socialSecurity" placeholder="No Hyphens" /></td>
+						name="socialSecurity" placeholder="No Hyphens" required/></td>
 					<td><label>Shoe Size (EU)</label></td>
 					<td><input type="number" max="52" id="shoeSize"
-						name="shoeSize" placeholder="EU Shoe Size" /></td>
+						name="shoeSize" placeholder="EU Shoe Size" required/></td>
 				</tr>
 			</table>
 			<fieldset>
@@ -85,12 +85,12 @@
 				<div class="btn-group btn-group-toggle" data-toggle="buttons">
 					<label class="btn btn-secondary active"> <input
 						type="radio" name="roast" id="light" value="Light"
-						autocomplete="off" checked> Light
+						autocomplete="off" checked required> Light
 					</label> <label class="btn btn-secondary"> <input type="radio"
-						name="roast" id="medium" value="Medium" autocomplete="off">
+						name="roast" id="medium" value="Medium" autocomplete="off" required>
 						Medium
 					</label> <label class="btn btn-secondary"> <input type="radio"
-						name="roast" id="dark" value="Dark" autocomplete="off">
+						name="roast" id="dark" value="Dark" autocomplete="off" required>
 						Dark
 					</label>
 				</div>
