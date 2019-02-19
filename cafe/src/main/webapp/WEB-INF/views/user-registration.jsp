@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="/style.css"/>
 <title>Cafe Registration</title>
 </head>
 <body>
@@ -17,7 +18,9 @@
 
 	<form action="/user-registration-result" method="post">
 		<br>
-		<table>
+		<center>
+		
+		<table class ="blueTable">
 
 			<tr>
 				<td><label>First Name </label></td>
@@ -52,8 +55,10 @@
 			</p>
 
 		</fieldset>
+		
 
 		<button>Submit Application</button>
 	</form>
+	</center>
 </body>
 </html>
