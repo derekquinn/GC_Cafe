@@ -7,10 +7,23 @@
 <meta charset="UTF-8">
 <title>Registration Successful!</title>
 <link rel="stylesheet" href="/style.css"/>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
 <center>
-<h3>Registration Data Captured</h3>
+
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 class="display-4">Encapsulation Underway!</h1>
+			<p class="lead">Your application has been submitted. </p>
+		</div>
+	</div>
 
 
 <table class ="blueTable">
@@ -20,7 +33,7 @@
 <tr><td>Last Name:</td><td> ${ user.lastName }</td></tr>
 
 
-<tr><td>SSN#:</td><td> ${ user.socialSecurity } </td></tr>
+<tr><td>SSN#:</td><td> ***-**-**** </td></tr>
 
 
 <tr><td>Shoe Size:</td><td> ${ user.shoeSize }</td></tr>

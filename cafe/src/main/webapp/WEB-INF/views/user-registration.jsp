@@ -16,21 +16,23 @@
 <title>Cafe Registration</title>
 </head>
 <body>
-	<center>
-		<h3>
-			<i>A CAFE CALLED ENCAPSULATION </i>
-		</h3>
 
-		<i>A Cafe Called Encapsulation, requires a comprehensive
-			application and interview process before you will be admitted to our
-			facility.</i>
-	</center>
+
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 class="display-4">Encapsulation Registration</h1>
+			<p class="lead">Submit your application and you're one step away
+				from joining the worlds most exclusive coffee shop.</p>
+		</div>
+	</div>
+
 
 
 	<form action="/user-registration-result" method="post">
 		<br>
 		<center>
 			<H3>Personal Data</H3>
+			<br>
 			<table class="blueTable">
 
 				<tr>
@@ -60,6 +62,20 @@
 						name="shoeSize" placeholder="EU Shoe Size" /></td>
 				</tr>
 			</table>
+			<fieldset>
+				<br>
+				<H3>Essay Portion</H3>
+
+				<div class="form-group">
+					<label for="exampleFormControlTextarea1"><i>In no less than 1000 words, please describe coffee (as it relates to Encapsulation). </i></label>
+					<textarea class="form-control" id="exampleFormControlTextarea1"
+						rows="5"></textarea>
+				</div>
+
+
+
+
+			</fieldset>
 			<br>
 			<H3>Coffee Preferences</H3>
 			<fieldset>
@@ -81,8 +97,8 @@
 				<br> <br>
 
 				<p>Extraction Preference:</p>
-			
-				<div >
+
+				<div>
 					<select name="extraction">
 						<option value="Espresso">Espresso</option>
 						<option value="Drip">Drip Machine</option>
@@ -97,9 +113,15 @@
 
 
 			</fieldset>
+
+
 			<br>
 
 			<button class="btn btn-dark">Submit To Encapsulation</button>
+			<br>
+			<br>
+			<br>
+			
 	</form>
 	</center>
 	<!-- BOOTSTRAP -->
@@ -116,4 +138,7 @@
 		crossorigin="anonymous"></script>
 
 </body>
+<footer>
+
+</footer>
 </html>

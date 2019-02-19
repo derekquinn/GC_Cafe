@@ -12,7 +12,8 @@
 </head>
 <body>
 
-	<center><h2> <i>A CAFE CALLED ENCAPSULATION </i></h2></center>
+	<center><h2> <i>A CAFE CALLED ENCAPSULATION </i></h2>
+	<b>Established 2019</b></center>
 	
 <div class="bd-example">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -54,6 +55,7 @@
     </a>
   </div>
 </div>
+<br>
 <center>
 
 
@@ -65,6 +67,7 @@
 
 </body>
 <footer>
-Click <a href="/user-registration"> HERE </a> to be encapsulated! </center>
+<br>
+<h5>Click <span class="badge badge-secondary"><a href="/user-registration">HERE</a></span> to be encapsulated.</h5></center>
 </footer>
 </html>
