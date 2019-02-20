@@ -1,6 +1,20 @@
 package com.cafecalledencapsulation.cafe;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="items") // name of SQL table
+
 public class Item {
+	
+	// Mark the ID, and designate that it is auto-generated
+	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+	//@Column(name="food_id") // name of SQL column if they are different than actual db column names
 
 	private Long id;
 	private String name;

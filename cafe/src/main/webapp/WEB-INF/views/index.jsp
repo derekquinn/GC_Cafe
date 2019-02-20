@@ -101,7 +101,15 @@
 
 </body>
 <footer>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Employees Only</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Click below</h6>
+    <a href="/admin" class="card-link">Admin Access</a>
+  </div>
+</div>
 <br>
-<i>Cafe Called Encapsulation is A Proud Member of Encapsulation Nation Federation</i></center>
+<center>
+<i><p>Cafe Called Encapsulation is A Proud Member of Encapsulation Nation Federation</p></i></center>
 </footer>
 </html>

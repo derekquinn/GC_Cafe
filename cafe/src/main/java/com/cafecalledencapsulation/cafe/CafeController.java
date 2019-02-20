@@ -43,6 +43,15 @@ public class CafeController {
 		return new ModelAndView("/user-registration-result");
 
 	}
+	@RequestMapping("/admin")
+
+	public ModelAndView showAdmin() {
+		
+		List<Item> listOfItems = itemsDao.findAll();
+		ModelAndView mav = new ModelAndView("admin", "items", listOfItems);
+		
+		return mav;
+	}
 	
 	
 
