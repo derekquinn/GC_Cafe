@@ -11,6 +11,7 @@ public class User {
 	private String extraction;
 	private String email;
 	private String birthDate;
+	private Long iD;
 
 // no args constructor 
 	public User() {
@@ -18,7 +19,8 @@ public class User {
 	}
 
 // overloaded constructor 
-	public User(String firstname, String lastname, String socialSecurity, int shoeSize, String roast) {
+	public User(String firstName, String lastName, String socialSecurity, int shoeSize, String roast,
+			String extraction, String email, String birthDate) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.socialSecurity = socialSecurity;
@@ -31,6 +33,9 @@ public class User {
 	}
 
 // getters for users object 
+	public Long getId() {
+		return iD;
+	}
 	public String getEmail() {
 		return email;
 	}
@@ -60,6 +65,9 @@ public class User {
 	}
 
 // setters for users object 
+	public void setId(Long iD) {
+		this.iD=iD;
+	}
 	public void setBirthDate(String birthDate) {
 		this.birthDate = birthDate;
 	}

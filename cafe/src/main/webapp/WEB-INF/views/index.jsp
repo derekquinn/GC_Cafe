@@ -64,6 +64,31 @@
   <p>You can join this elite club of computer programmers, construction workers and well regarded citizens by filling out our application below. </p>
   <a class="btn btn-primary btn-lg" href="/user-registration" role="button">Apply Now</a>
 </div>
+
+<div class="jumbotron">
+  <h1 class="display-4">Store Open!</h1>
+  <p class="lead">Our menu is now open to the public!</p>
+  <hr class="my-4">
+ 
+	<h1>Product Offerings</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Name</th><th>Description</th><th>Price</th><th>Quantity</th>
+				</tr>
+			</thead>
+			<tbody>
+				<c:forEach var="items" items="${item}">
+				<tr>
+					<td>${item.name}</td>
+					<td>${item.description}</td>
+					<td>${item.price }</td>
+					<td>${item.quantity }</td>
+				</tr>
+				</c:forEach>
+			</tbody>
+		</table>
+</div>
 <center>
 
 
