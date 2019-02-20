@@ -1,5 +1,7 @@
 package com.cafecalledencapsulation.cafe;
 
+import java.util.List;
+
 //import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +9,7 @@ import org.springframework.stereotype.Controller;
 //import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
 
 @Controller
 public class CafeController {
@@ -20,8 +23,9 @@ public class CafeController {
 	@RequestMapping("/")
 	public ModelAndView showCafeHome() {
 
-		ModelAndView mav = new ModelAndView("index");
-
+		
+		List<Item> listOfItems = itemsDao.findAll();
+		ModelAndView mav = new ModelAndView("index", "items", listOfItems);
 		return mav;
 	}
 

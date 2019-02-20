@@ -72,21 +72,22 @@
  
 	<h1>Product Offerings</h1>
 		<table class="table">
+		
 			<thead>
 				<tr>
 					<th>Name</th><th>Description</th><th>Price</th><th>Quantity</th>
 				</tr>
 			</thead>
-			<tbody>
-				<c:forEach var="items" items="${item}">
+	
+				<c:forEach var="items" items="${ items }">
 				<tr>
-					<td>${item.name}</td>
-					<td>${item.description}</td>
-					<td>${item.price }</td>
-					<td>${item.quantity }</td>
+					<td>${ items.name}</td>
+					<td>${ items.description }</td>
+					<td>${ items.price }</td>
+					<td>${ items.quantity }</td>
 				</tr>
 				</c:forEach>
-			</tbody>
+		
 		</table>
 </div>
 <center>

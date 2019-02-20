@@ -1,7 +1,5 @@
 package com.cafecalledencapsulation.cafe;
 
-
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,11 +18,7 @@ public class ItemsDao {
 		// BeanPropertyRowMapper uses the rows from the SQL result create
 		// new Room objects and fill in the values by calling the setters.
 		// Use .query for SQL SELECT statements.
-		return jdbcTemplate.query("SELECT * FROM items", new BeanPropertyRowMapper<>(Item.class));
+		return jdbcTemplate.query("SELECT * FROM items;", new BeanPropertyRowMapper<>(Item.class));
 	}
-	
-	
-	
-	
-	
+
 }
