@@ -1,10 +1,10 @@
 package com.cafecalledencapsulation.cafe;
 
-import java.util.List;
+//import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
+//import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -13,6 +13,9 @@ public class CafeController {
 
 	@Autowired
 	private ItemsDao itemsDao;
+	
+	@Autowired
+	private UsersDao usersDao;
 
 	@RequestMapping("/")
 	public ModelAndView showCafeHome() {
@@ -25,15 +28,19 @@ public class CafeController {
 	@RequestMapping("/user-registration")
 
 	public ModelAndView showUserRegistration() {
+		
 		return new ModelAndView("/user-registration");
 	}
 
 	@RequestMapping("/user-registration-result")
 	public ModelAndView submitUserReg(User aUser) {
+		usersDao.create(aUser);
 
 		return new ModelAndView("/user-registration-result");
 
 	}
+	
+	
 
 
 // post map to hide ssn and max data 

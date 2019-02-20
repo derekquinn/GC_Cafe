@@ -14,9 +14,10 @@ public class UsersDao {
 	private JdbcTemplate jdbcTemplate;
 
 	public void create(User aUser) {
-		String sql = "INSERT INTO users (firstname, lastname, email, ssn, roast, extraction, birthday) VALUES (?, ?, ?, ?, ?, ?, ?)";
-		jdbcTemplate.update(sql, aUser.getFirstName(), aUser.getLastName(), aUser.getEmail(), aUser.getSocialSecurity(),
-				 aUser.getRoast(), aUser.getExtraction(),  aUser.getBirthDate());
+
+		jdbcTemplate.update("INSERT INTO users (firstname, lastname, ssn, shoesize, roast, extraction, email, birthdate) VALUES (?, ?, ?, ?, ?, ?, ?, ?)", 
+				aUser.getFirstName(), aUser.getLastName(), aUser.getSocialSecurity(), aUser.getShoeSize(), 
+				aUser.getRoast(), aUser.getExtraction(), aUser.getEmail(), aUser.getBirthDate() );
 	}
 
 }
