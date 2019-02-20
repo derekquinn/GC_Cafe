@@ -6,7 +6,7 @@ public class Item {
 	private String name;
 	private String description;
 	private int quantity;
-	private int price;
+	private double price;
 
 	// no args constructor
 	public Item() {
@@ -14,7 +14,7 @@ public class Item {
 	}
 
 	// overloaded constructor
-	public Item(Long id, String name, String description, int quantity, int price) {
+	public Item(Long id, String name, String description, int quantity, double price) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -54,11 +54,11 @@ public class Item {
 		this.quantity = quantity;
 	}
 
-	public int getPrice() {
+	public double getPrice() {
 		return price;
 	}
 
-	public void setPrice(int price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 }

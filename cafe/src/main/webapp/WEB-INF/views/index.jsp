@@ -75,7 +75,7 @@
 		
 			<thead>
 				<tr>
-					<th>Name</th><th>Description</th><th>Price</th><th>Quantity</th>
+					<th>Name</th><th>Description</th><th>Price</th><th>Quantity Available</th>
 				</tr>
 			</thead>
 	
@@ -83,7 +83,7 @@
 				<tr>
 					<td>${ items.name}</td>
 					<td>${ items.description }</td>
-					<td>${ items.price }</td>
+					<td>$ ${ items.price }</td>
 					<td>${ items.quantity }</td>
 				</tr>
 				</c:forEach>
