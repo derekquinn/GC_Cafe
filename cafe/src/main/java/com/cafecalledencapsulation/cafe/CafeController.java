@@ -67,7 +67,21 @@ public class CafeController {
 		itemsDao.create(aItem);
 		return new ModelAndView("redirect:/admin");
 	}
+	
+	// used to delete an item
 
+	@RequestMapping("/item/delete")
+	public ModelAndView delete(@RequestParam("id") Long id) {
+		itemsDao.delete(id);
+		return new ModelAndView("redirect:/admin");
+	}
+	
+	
+	
+	
+	
+	
+	
 // used to edit an item 
 	
 //	// path variable required to identify which food we're editing
