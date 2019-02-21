@@ -23,7 +23,7 @@
 
 
 		<p class="lead">
-			<b>Click a product name below to edit or delete it.</b>
+			<i>Click <b>EDIT</b>, <b>DELETE </b>or <b>ADD ITEM </b> buttons below to make changes.</i>
 		</p>
 		<table class="table">
 
@@ -33,12 +33,13 @@
 					<th>Description</th>
 					<th>Price</th>
 					<th>Quantity Available</th>
+					<th>Modify</th>
 				</tr>
 			</thead>
 
 			<c:forEach var="items" items="${ items }">
 				<tr>
-					<td><a href="/edit${id}">${ items.name}</a></td>
+					<td>${ items.name}</td>
 					<td>${ items.description }</td>
 					<td>$ ${ items.price }</td>
 					<td>${ items.quantity }</td>

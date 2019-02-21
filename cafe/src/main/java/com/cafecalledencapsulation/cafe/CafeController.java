@@ -29,7 +29,8 @@ public class CafeController {
 		ModelAndView mav = new ModelAndView("index", "items", listOfItems);
 		return mav;
 	}
-// used to add a user 
+
+// ADD A USER
 	@RequestMapping("/user-registration")
 
 	public ModelAndView showUserRegistration() {
@@ -54,7 +55,8 @@ public class CafeController {
 
 		return mav;
 	}
-// used to add an item 
+
+// ADD AN ITEM / PRODUCT
 	@RequestMapping("/add-item")
 
 	public ModelAndView addItem() {
@@ -67,49 +69,29 @@ public class CafeController {
 		itemsDao.create(aItem);
 		return new ModelAndView("redirect:/admin");
 	}
-	
-	// used to delete an item
+
+// DELETE AN ITEM / PRODUCT
 
 	@RequestMapping("/item/delete")
 	public ModelAndView delete(@RequestParam("id") Long id) {
 		itemsDao.delete(id);
 		return new ModelAndView("redirect:/admin");
 	}
-	
-	
-	
-	
-	
-	
-	
-// used to edit an item 
-	
-//	// path variable required to identify which food we're editing
-//		@RequestMapping("/edit-item")
-//		public ModelAndView showEditForm(@RequestParam("id") Long id) {
-//			ModelAndView mav = new ModelAndView("edit-item");
-//			mav.addObject("item", itemsDao.findById(id));
-//			mav.addObject("title", "Edit Food");
-//			return mav;
-//		}
-//		
-//		// same URL but different method
-//		@PostMapping("/edit-item")
-//		public ModelAndView submitEditForm(Item aItem) {
-//			itemsDao.update(aItem);
-//			return new ModelAndView("redirect:/admin");
-//		}
-//	
-	
 
+// EDIT AN ITEM / PRODCUT
 
-// post map to hide ssn and max data 
-
-//	@PostMapping("/user-registration-result")
-//
-//	public ModelAndView submitUserRegSecure(User aUser) {
-//
-//		return new ModelAndView("user-registration-result");
-//	}
-
+	@RequestMapping("/item/update")
+	public ModelAndView showEditForm(@RequestParam("id") Long id) {
+		ModelAndView mav = new ModelAndView("edit-item");
+		mav.addObject("item", itemsDao.findById(id));
+		mav.addObject("title", "Edit Food");
+		return mav;
 	}
+
+	@PostMapping("/item/update")
+	public ModelAndView submitEditForm(Item aItem) {
+		itemsDao.update(aItem);
+		return new ModelAndView("redirect:/food");
+	}
+
+}

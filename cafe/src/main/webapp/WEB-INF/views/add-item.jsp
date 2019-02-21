@@ -48,7 +48,7 @@
 
 			<tr>
 				<td><label>Price</label></td>
-				<td><input type="number" id="price" name="price"
+				<td><input type="number" step="0.01" id="price" name="price"
 					placeholder="0.00" required></td>
 				<td><label>Quantity</label></td>
 				<td><input placeholder="0" type="number" id="quantity"
