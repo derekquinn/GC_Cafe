@@ -84,7 +84,7 @@ public class CafeController {
 	public ModelAndView showEditForm(@RequestParam("id") Long id) {
 		ModelAndView mav = new ModelAndView("edit-item");
 		mav.addObject("item", itemsDao.findById(id));
-		mav.addObject("title", "Edit Food");
+	//	mav.addObject("title", "Edit Food");
 		return mav;
 	}
 

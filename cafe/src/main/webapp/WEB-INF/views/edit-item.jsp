@@ -17,7 +17,7 @@
   <h1 class="display-4">Encapsulation Edit Bay</h1>
  
   <hr class="my-4">
- 
+ 	<h1>${ title }</h1>
 
 	 <p class="lead"><b>Edit a product's information and press update to save.</b></p>
 		<form method="post">
@@ -35,11 +35,11 @@
 			</div>
 			<div class="form-group">
 			    <label for="description">Quantity</label>
-			    <input class="form-control" id="quantity" name="quantity" value="${item.quantity}" required minlength="3">
+			    <input class="form-control" id="quantity" name="quantity" value="${item.quantity}" required minlength="1">
 			</div>
 				<div class="form-group">
 			    <label for="description">Price</label>
-			    <input class="form-control" id="price" name="price" value="${item.price}" required minlength="3">
+			    <input class="form-control" id="price" name="price" value="${item.price}" required minlength="1">
 			</div>
 			<button type="submit" class="btn btn-primary">Submit</button>
 			<a href="/admin" class="btn btn-link">Cancel</a>
