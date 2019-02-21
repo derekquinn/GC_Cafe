@@ -37,8 +37,12 @@
 			    <label for="description">Quantity</label>
 			    <input class="form-control" id="quantity" name="quantity" value="${item.quantity}" required minlength="3">
 			</div>
+				<div class="form-group">
+			    <label for="description">Price</label>
+			    <input class="form-control" id="price" name="price" value="${item.price}" required minlength="3">
+			</div>
 			<button type="submit" class="btn btn-primary">Submit</button>
-			<a href="/food" class="btn btn-link">Cancel</a>
+			<a href="/admin" class="btn btn-link">Cancel</a>
 		</form>
 		
 
