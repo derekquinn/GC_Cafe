@@ -37,17 +37,17 @@
 					value="${item.name}" required minlength="2" autocomplete="off">
 			</div>
 			<div class="form-group">
-				<label for="category">Description</label> <input
-					class="form-control" id="description" name="cdescription"
+				<label for="description">Description</label> <input
+					class="form-control" id="description" name="description"
 					value="${item.description}" required>
 			</div>
 			<div class="form-group">
-				<label for="description">Quantity</label> <input
+				<label for="quantity">Quantity</label> <input
 					class="form-control" id="quantity" name="quantity"
 					value="${item.quantity}" required minlength="1">
 			</div>
 			<div class="form-group">
-				<label for="description">Price</label> <input class="form-control"
+				<label for="price">Price</label> <input class="form-control"
 					id="price" name="price" value="${item.price}" required
 					minlength="1">
 			</div>
