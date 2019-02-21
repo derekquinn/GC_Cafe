@@ -91,7 +91,7 @@ public class CafeController {
 	@PostMapping("/item/update")
 	public ModelAndView submitEditForm(Item aItem) {
 		itemsDao.update(aItem);
-		return new ModelAndView("redirect:/food");
+		return new ModelAndView("redirect:/admin");
 	}
 
 }
