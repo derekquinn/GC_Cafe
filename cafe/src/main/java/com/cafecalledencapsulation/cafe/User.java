@@ -1,15 +1,34 @@
 package com.cafecalledencapsulation.cafe;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="users") // name of SQL table
 // user class allows us to create user objects 
 public class User {
 
+	// Mark the ID, and designate that it is auto-generated
+		@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+	
+	@Column(name="firstname") // name of SQL column if they are different than actual db column names
 	private String firstName;
+	@Column(name="lastname")
 	private String lastName;
+	@Column(name="ssn")
 	private String socialSecurity;
+	@Column(name="shoesize")
 	private int shoeSize;
+	@Column(name="roast")
 	private String roast;
+	@Column(name="extraction")
 	private String extraction;
 	private String email;
+	@Column(name="birthdate")
 	private String birthDate;
 	private Long iD;
 

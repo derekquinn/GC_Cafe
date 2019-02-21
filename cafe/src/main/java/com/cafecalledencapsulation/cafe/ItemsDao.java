@@ -25,4 +25,12 @@ public class ItemsDao {
 	public void create(Item aItem) {
 		em.persist(aItem);
 	}
+	
+	public Item findById(Long id) {
+		return em.find(Item.class, id);
+	}
+	
+	public void update(Item aItem) {
+		em.merge(aItem);
+	}
 }
