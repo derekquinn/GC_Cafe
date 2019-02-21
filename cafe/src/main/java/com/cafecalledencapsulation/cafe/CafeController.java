@@ -70,22 +70,22 @@ public class CafeController {
 
 // used to edit an item 
 	
-	// path variable required to identify which food we're editing
-		@RequestMapping("/edit-item")
-		public ModelAndView showEditForm(@RequestParam("id") Long id) {
-			ModelAndView mav = new ModelAndView("edit-item");
-			mav.addObject("item", itemsDao.findById(id));
-			mav.addObject("title", "Edit Food");
-			return mav;
-		}
-		
-		// same URL but different method
-		@PostMapping("/edit-item")
-		public ModelAndView submitEditForm(Item aItem) {
-			itemsDao.update(aItem);
-			return new ModelAndView("redirect:/admin");
-		}
-	
+//	// path variable required to identify which food we're editing
+//		@RequestMapping("/edit-item")
+//		public ModelAndView showEditForm(@RequestParam("id") Long id) {
+//			ModelAndView mav = new ModelAndView("edit-item");
+//			mav.addObject("item", itemsDao.findById(id));
+//			mav.addObject("title", "Edit Food");
+//			return mav;
+//		}
+//		
+//		// same URL but different method
+//		@PostMapping("/edit-item")
+//		public ModelAndView submitEditForm(Item aItem) {
+//			itemsDao.update(aItem);
+//			return new ModelAndView("redirect:/admin");
+//		}
+//	
 	
 
 

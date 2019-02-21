@@ -13,7 +13,7 @@ import javax.persistence.Table;
 public class User {
 
 	// Mark the ID, and designate that it is auto-generated
-		@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+		
 	
 	@Column(name="firstname") // name of SQL column if they are different than actual db column names
 	private String firstName;
@@ -30,6 +30,7 @@ public class User {
 	private String email;
 	@Column(name="birthdate")
 	private String birthDate;
+	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long iD;
 
 // no args constructor 
