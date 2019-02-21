@@ -14,11 +14,12 @@
 <body>
 
 <div class="jumbotron">
-  <h1 class="display-4">Encapsulation Employees Only</h1>
-  <p class="lead"><i>Use this page to edit the current product offerings.</i></p>
+  <h1 class="display-4">Inventory Administration</h1>
+ 
   <hr class="my-4">
  
-	<h1>Product Management Console</h1>
+
+	 <p class="lead"><b>Click a product name below to edit or delete it.</b></p>
 		<table class="table">
 		
 			<thead>
@@ -29,7 +30,7 @@
 	
 				<c:forEach var="items" items="${ items }">
 				<tr>
-					<td>${ items.name}</td>
+				<td><a href="/edit${id}">${ items.name}</a></td>
 					<td>${ items.description }</td>
 					<td>$ ${ items.price }</td>
 					<td>${ items.quantity }</td>
@@ -37,7 +38,17 @@
 				</c:forEach>
 		
 		</table>
+		
+	<a href="/add-item" class="btn btn-info" role="button">Add Item</a>
 </div>
 
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Back Home</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Done being a boss?</h6>
+    <p class="card-text">Click below to return home.</p>
+    <a href="/" class="card-link">Home</a>
+  </div>
+</div>
 </body>
 </html>

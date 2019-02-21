@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 //import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -35,6 +36,13 @@ public class CafeController {
 		
 		return new ModelAndView("/user-registration");
 	}
+	
+	@RequestMapping("/add-item")
+
+	public ModelAndView addItem() {
+		
+		return new ModelAndView("/add-item");
+	}
 
 	@RequestMapping("/user-registration-result")
 	public ModelAndView submitUserReg(User aUser) {
@@ -52,6 +60,14 @@ public class CafeController {
 		
 		return mav;
 	}
+	
+	
+	@PostMapping("/add-item")
+	public ModelAndView submitCreateForm(Item aItem) {
+		itemsDao.create(aItem);
+		return new ModelAndView("redirect:/admin");
+	}
+
 	
 	
 

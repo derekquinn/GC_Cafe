@@ -22,5 +22,7 @@ public class ItemsDao {
 		// Use .query for SQL SELECT statements.
 		return em.createQuery("FROM Item", Item.class).getResultList();
 	}
-
+	public void create(Item aItem) {
+		em.persist(aItem);
+	}
 }
