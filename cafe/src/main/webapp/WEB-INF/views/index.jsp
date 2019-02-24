@@ -12,12 +12,12 @@
 
 <div class="card" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">User Profile</h5>
+    <h5 class="card-title">	Hello ${ profile.firstName } ${ profile.lastName } </h5>
   	<span>
-			Hello ${ profile.firstName } ${ profile.lastName } (stored in session)
+		(stored in session)
 		</span>
    <!--  <h6 class="card-subtitle mb-2 text-muted">Your Profile</h6> -->
-    <a href="/user-edit-profile" class="card-link">Edit</a>
+
   </div>
 </div>
 
