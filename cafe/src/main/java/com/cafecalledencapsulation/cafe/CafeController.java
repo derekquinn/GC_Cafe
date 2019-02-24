@@ -42,14 +42,14 @@ public class CafeController {
 
 		return new ModelAndView("/user-registration");
 	}
-
-	@RequestMapping("/user-registration-result")
-	public ModelAndView submitUserReg(User aUser) {
-		usersDao.create(aUser);
-
-		return new ModelAndView("/user-registration-result");
-
-	}
+//
+//	@RequestMapping("/user-registration-result")
+//	public ModelAndView submitUserReg(User aUser) {
+//		usersDao.create(aUser);
+//
+//		return new ModelAndView("/user-registration-result");
+//
+//	}
 
 	@RequestMapping("/admin")
 
@@ -102,15 +102,16 @@ public class CafeController {
 	////// USER SESSIONS 
 	
 	// Use @SessionAttribute to get item from session
-	@RequestMapping("/user-edit-profile")
+	@RequestMapping("/user-registration-result")
 	public ModelAndView showEditProfile(@SessionAttribute(name="profile", required=false) User aUser) {
-		return new ModelAndView("user-edit-profile", "user", aUser);
+		return new ModelAndView("user-registration-result", "user", aUser);
 	}
 	
 	// Use HttpSession to set an attribute on the session
-	@PostMapping("/user-edit-profile")
+	@PostMapping("/user-registration-result")
 	public ModelAndView submitEditProfile(User aUser, HttpSession session) {
 		session.setAttribute("profile", aUser);
+		usersDao.create(aUser);
 		ModelAndView mav = new ModelAndView("redirect:/");
 		return mav;
 	}
