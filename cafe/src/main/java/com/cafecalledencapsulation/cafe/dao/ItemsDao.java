@@ -1,4 +1,4 @@
-package com.cafecalledencapsulation.cafe;
+package com.cafecalledencapsulation.cafe.dao;
 
 import java.util.List;
 

@@ -116,5 +116,12 @@ public class User {
 	public void setSocialSecurity(String socialSecurity) {
 		this.socialSecurity = socialSecurity;
 	}
+	
+	@Override
+	public String toString() {
+		return "User:" + lastName + ", " + firstName;
+	}
 
 }
+
+

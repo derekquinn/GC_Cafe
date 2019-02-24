@@ -2,16 +2,21 @@ package com.cafecalledencapsulation.cafe;
 
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
+
 //import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-//import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.cafecalledencapsulation.cafe.dao.ItemsDao;
+import com.cafecalledencapsulation.cafe.dao.UsersDao;
+
 
 @Controller
 public class CafeController {
@@ -92,6 +97,22 @@ public class CafeController {
 	public ModelAndView submitEditForm(Item aItem) {
 		itemsDao.update(aItem);
 		return new ModelAndView("redirect:/admin");
+	}
+	
+	////// USER SESSIONS 
+	
+	// Use @SessionAttribute to get item from session
+	@RequestMapping("/user-edit-profile")
+	public ModelAndView showEditProfile(@SessionAttribute(name="profile", required=false) User aUser) {
+		return new ModelAndView("user-edit-profile", "user", aUser);
+	}
+	
+	// Use HttpSession to set an attribute on the session
+	@PostMapping("/user-edit-profile")
+	public ModelAndView submitEditProfile(User aUser, HttpSession session) {
+		session.setAttribute("profile", aUser);
+		ModelAndView mav = new ModelAndView("redirect:/");
+		return mav;
 	}
 
 }
