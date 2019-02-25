@@ -14,7 +14,8 @@ public class User {
 
 	// Mark the ID, and designate that it is auto-generated
 		
-	
+	private String password;
+	//private String password2;
 	@Column(name="firstname") // name of SQL column if they are different than actual db column names
 	private String firstName;
 	@Column(name="lastname")
@@ -39,8 +40,9 @@ public class User {
 	}
 
 // overloaded constructor 
-	public User(String firstName, String lastName, String socialSecurity, int shoeSize, String roast,
+	public User(String password,String firstName, String lastName, String socialSecurity, int shoeSize, String roast,
 			String extraction, String email, String birthDate) {
+		this.password = password;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.socialSecurity = socialSecurity;
@@ -53,6 +55,12 @@ public class User {
 	}
 
 // getters for users object 
+//	public String getPassword2() {
+//		return password2;
+	//}
+	public String getPassword() {
+		return password;
+	}
 	public Long getId() {
 		return iD;
 	}
@@ -85,6 +93,10 @@ public class User {
 	}
 
 // setters for users object 
+
+	public void setPassword (String password) {
+		this.password = password;
+	}
 	public void setId(Long iD) {
 		this.iD=iD;
 	}

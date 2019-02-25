@@ -26,7 +26,7 @@
 		</div>
 	</div>
 
-
+<p class="message">${ message }</p>
 
 	<form action="/user-registration-result" method="post">
 		<br>
@@ -38,7 +38,7 @@
 				<tr>
 					<td><label>First Name </label></td>
 					<td><input type="text" id="firstName" name="firstName"
-						placeholder="Steve" pattern="[A-Z][a-z]*" required/></td>
+						placeholder="Steve" pattern="[A-Z][a-z]*" required /></td>
 					<td><label>Last Name</label></td>
 					<td><input type="text" id="lastName" name="lastName"
 						placeholder="Jobs" pattern="[A-Z][a-z]*" required /></td>
@@ -50,16 +50,24 @@
 					<td><input type="email" id="email" name="email"
 						placeholder="steve@apple.com" required></td>
 					<td><label>Birthday</label></td>
-					<td><input type="date" id="birthDate" name="birthDate" required></td>
+					<td><input type="date" id="birthDate" name="birthDate"
+						required></td>
 				</tr>
-
+				<tr>
+					<td><label>Password</label></td>
+					<td><input type="password" id="password" name="password"
+						placeholder="make it secure!" required></td>
+					<td><label>Confirm Password</label></td>
+					<td><input type="password" id="password2" name="confirm-password"
+						required></td>
+				</tr>
 				<tr>
 					<td><label>Social Security Number: </label></td>
 					<td><input type="password" maxlength="9" id="socialSecurity"
-						name="socialSecurity" placeholder="No Hyphens" required/></td>
+						name="socialSecurity" placeholder="No Hyphens" required /></td>
 					<td><label>Shoe Size (EU)</label></td>
 					<td><input type="number" max="52" id="shoeSize"
-						name="shoeSize" placeholder="EU Shoe Size" required/></td>
+						name="shoeSize" placeholder="EU Shoe Size" required /></td>
 				</tr>
 			</table>
 			<fieldset>
@@ -67,7 +75,9 @@
 				<H3>Essay Portion</H3>
 
 				<div class="form-group">
-					<label for="exampleFormControlTextarea1"><i>In no less than 1000 words, please describe coffee (as it relates to Encapsulation). </i></label>
+					<label for="exampleFormControlTextarea1"><i>In no less
+							than 1000 words, please describe coffee (as it relates to
+							Encapsulation). </i></label>
 					<textarea class="form-control" id="exampleFormControlTextarea1"
 						rows="5"></textarea>
 				</div>
@@ -87,8 +97,8 @@
 						type="radio" name="roast" id="light" value="Light"
 						autocomplete="off" checked required> Light
 					</label> <label class="btn btn-secondary"> <input type="radio"
-						name="roast" id="medium" value="Medium" autocomplete="off" required>
-						Medium
+						name="roast" id="medium" value="Medium" autocomplete="off"
+						required> Medium
 					</label> <label class="btn btn-secondary"> <input type="radio"
 						name="roast" id="dark" value="Dark" autocomplete="off" required>
 						Dark
@@ -118,10 +128,7 @@
 			<br>
 
 			<button class="btn btn-dark">Submit To Encapsulation</button>
-			<br>
-			<br>
-			<br>
-			
+			<br> <br> <br>
 	</form>
 	</center>
 	<!-- BOOTSTRAP -->
@@ -140,14 +147,16 @@
 </body>
 <footer>
 
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Whoops!</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Not ready to apply yet?</h6>
-    <p class="card-text">Feel free to return to the home page if you're not ready to apply.</p>
-    <a href="/" class="card-link">Home</a>
-  </div>
-</div>
+	<div class="card" style="width: 18rem;">
+		<div class="card-body">
+			<h5 class="card-title">Whoops!</h5>
+			<h6 class="card-subtitle mb-2 text-muted">Not ready to apply
+				yet?</h6>
+			<p class="card-text">Feel free to return to the home page if
+				you're not ready to apply.</p>
+			<a href="/" class="card-link">Home</a>
+		</div>
+	</div>
 
 </footer>
 </html>

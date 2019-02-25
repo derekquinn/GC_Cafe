@@ -13,9 +13,7 @@
 <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">	Hello ${ profile.firstName } ${ profile.lastName } </h5>
-  	<span>
-		(stored in session)
-		</span>
+  <a class="btn btn-primary" href="/user-login" role="button">Login</a>
    <!--  <h6 class="card-subtitle mb-2 text-muted">Your Profile</h6> -->
 
   </div>
@@ -37,7 +35,7 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="/images/coffee_shop_s.jpg" class="d-block w-100" alt="Get Encapsulated">
-        <div class="carousel-caption d-md-block">          <a href="/user-registration"><h5>Now Accepting Member Applications</h5> 
+        <div class="carousel-caption d-md-block"><a href="/user-registration"><h5>Now Accepting Member Applications</h5> 
           <p>Apply today and join our member Connoisseurs from around the world.</p></a>
           
         </div>
