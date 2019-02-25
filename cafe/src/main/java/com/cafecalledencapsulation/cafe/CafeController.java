@@ -59,7 +59,7 @@ public class CafeController {
 		}
 		
 		// On successful login, add the user to the session.
-		session.setAttribute("user", aUser);
+		session.setAttribute("profile", aUser);
 		
 		// A flash message will only show on the very next page. Then it will go away.
 		// It is useful with redirects since you can't add attributes to the mav.

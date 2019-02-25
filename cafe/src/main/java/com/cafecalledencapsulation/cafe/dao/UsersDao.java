@@ -12,9 +12,6 @@ import com.cafecalledencapsulation.cafe.User;
 @Transactional
 public class UsersDao {
 
-	// @Autowired
-	// private JdbcTemplate jdbcTemplate;
-
 	@PersistenceContext
 	private EntityManager em;
 
@@ -24,12 +21,7 @@ public class UsersDao {
 
 	public void create(User aUser) {
 		em.merge(aUser);
-		// jdbcTemplate.update("INSERT INTO users (firstname, lastname, email, ssn,
-		// roast, extraction, birthdate, shoesize) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-		// aUser.getFirstName(), aUser.getLastName(), aUser.getEmail(),
-		// aUser.getSocialSecurity(),
-		// aUser.getRoast(), aUser.getExtraction(), aUser.getBirthDate(),
-		// aUser.getShoeSize() );
+
 	}
 
 	public User findByEmail(String email) {
