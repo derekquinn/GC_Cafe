@@ -12,27 +12,13 @@
 
 <title>A Cafe Called Encapsulation</title>
 	<%@include file="partials/header.jsp" %>
-<%-- <div class="card" style="width: 18rem;">
-  <div class="card-body">
- 
- 
- 
- 
-    <h5 class="card-title">	Hello ${ profile.firstName } ${ profile.lastName } </h5>
-  <a class="btn btn-primary" href="/user-login" role="button">Login</a> --%>
-   <!--  <h6 class="card-subtitle mb-2 text-muted">Your Profile</h6> -->
-
-
-
-
-  </div>
-</div>
 
 </head>
 <body>
 
 	<center><h2> <i>A CAFE CALLED ENCAPSULATION </i></h2>
 	<b>Established 2019</b></center>
+	
 	
 <div class="bd-example">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">

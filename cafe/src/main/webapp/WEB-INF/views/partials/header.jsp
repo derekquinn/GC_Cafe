@@ -9,9 +9,10 @@
 
 				<div class="card" style="width: 18rem;">
 					<div class="card-body">
-
-						Welcome Back, ${ profile.firstName } <br> <a
+   <h5 class="card-title">Welcome, ${ profile.firstName } </h5>
+						 <a
 							class="btn btn-primary" href="/logout" role="button">Logout</a>
+								<p class="message">${ message }</p>
 					</div>
 				</div>
 			</c:when>
@@ -20,6 +21,7 @@
 
 				<div class="card" style="width: 18rem;">
 					<div class="card-body">
+			    <h5 class="card-title">Welcome!</h5>
 						<a class="btn btn-primary" href="/user-login" role="button">Login</a>
 						<a class="btn btn-primary" href="/user-registration" role="button">Register</a>
 					</div>
