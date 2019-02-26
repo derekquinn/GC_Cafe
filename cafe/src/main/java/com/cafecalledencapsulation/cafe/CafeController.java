@@ -66,6 +66,14 @@ public class CafeController {
 		redir.addFlashAttribute("message", "Logged in.");
 		return new ModelAndView("redirect:/");
 	}
+	
+// LOGOUT 
+	   @RequestMapping({"/logout"})
+	    public ModelAndView logout(HttpSession session, RedirectAttributes redir) {
+	        session.invalidate();
+	        redir.addFlashAttribute("Logged out now. Be good today.");
+	        return new ModelAndView("redirect:/");
+	    }
 
 // ADD A USER
 	@RequestMapping("/user-registration")

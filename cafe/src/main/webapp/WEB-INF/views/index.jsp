@@ -9,7 +9,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>A Cafe Called Encapsulation</title>
-
+	<%@include file="partials/header.jsp" %>
 <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">	Hello ${ profile.firstName } ${ profile.lastName } </h5>
