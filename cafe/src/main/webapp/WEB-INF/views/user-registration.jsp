@@ -15,6 +15,7 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Cafe Registration</title>
 </head>
+
 <body>
 
 	<div class="jumbotron jumbotron-fluid">

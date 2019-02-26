@@ -8,13 +8,22 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
 <title>A Cafe Called Encapsulation</title>
 	<%@include file="partials/header.jsp" %>
-<div class="card" style="width: 18rem;">
+<%-- <div class="card" style="width: 18rem;">
   <div class="card-body">
+ 
+ 
+ 
+ 
     <h5 class="card-title">	Hello ${ profile.firstName } ${ profile.lastName } </h5>
-  <a class="btn btn-primary" href="/user-login" role="button">Login</a>
+  <a class="btn btn-primary" href="/user-login" role="button">Login</a> --%>
    <!--  <h6 class="card-subtitle mb-2 text-muted">Your Profile</h6> -->
+
+
+
 
   </div>
 </div>
